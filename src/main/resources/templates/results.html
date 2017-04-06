@@ -1,0 +1,19 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-8"/>
+</head>
+<body>
+	Parabéns, você é maior de 18 anos para acessar esse site.
+
+	<table th:each="person, iter : ${people}">
+		<tr>
+			<td>Name:</td>
+			<td th:text="${person.name}"></td>
+		</tr>
+		<tr>
+			<td>Age:</td>
+			<td th:text="${person.age}"></td>
+		</tr>
+	</table>
+</body>
+</html>
